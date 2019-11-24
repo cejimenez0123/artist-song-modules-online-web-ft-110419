@@ -3,6 +3,7 @@ require_relative '../lib/concerns/memorable'
 require_relative '../lib/concerns/findable'
 class Song
   extend Memorable::ClassMethods
+  extend Findable
   attr_accessor :name
   attr_reader :artist
 
